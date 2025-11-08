@@ -257,6 +257,81 @@ const Index = () => {
         </div>
       </section>
 
+      <section className="container mx-auto px-4 py-16 md:py-24">
+        <div className="text-center mb-12 animate-fade-in">
+          <h2 className="text-3xl md:text-4xl font-bold text-foreground mb-4">
+            Отзывы наших клиентов
+          </h2>
+          <p className="text-lg text-muted-foreground max-w-2xl mx-auto">
+            Нам доверяют здоровье своих питомцев сотни владельцев собак
+          </p>
+        </div>
+        <div className="grid md:grid-cols-3 gap-6 max-w-6xl mx-auto">
+          <Card className="animate-fade-in border-2 hover:shadow-lg transition-shadow">
+            <CardHeader>
+              <div className="flex items-center gap-3 mb-2">
+                <div className="w-12 h-12 rounded-full bg-primary/10 flex items-center justify-center">
+                  <span className="text-xl font-bold text-primary">АС</span>
+                </div>
+                <div>
+                  <CardTitle className="text-lg">Анна Смирнова</CardTitle>
+                  <div className="flex gap-1 mt-1">
+                    {[...Array(5)].map((_, i) => (
+                      <Icon key={i} name="Star" size={16} className="text-primary fill-primary" />
+                    ))}
+                  </div>
+                </div>
+              </div>
+              <CardDescription className="text-base leading-relaxed">
+                Наш золотистый ретривер Макс страдал от аллергии. Врачи клиники DogDoc провели полное обследование и назначили эффективное лечение. Сейчас Макс здоров и счастлив! Спасибо за профессионализм!
+              </CardDescription>
+            </CardHeader>
+          </Card>
+
+          <Card className="animate-fade-in border-2 hover:shadow-lg transition-shadow" style={{ animationDelay: '0.1s' }}>
+            <CardHeader>
+              <div className="flex items-center gap-3 mb-2">
+                <div className="w-12 h-12 rounded-full bg-primary/10 flex items-center justify-center">
+                  <span className="text-xl font-bold text-primary">ДП</span>
+                </div>
+                <div>
+                  <CardTitle className="text-lg">Дмитрий Петров</CardTitle>
+                  <div className="flex gap-1 mt-1">
+                    {[...Array(5)].map((_, i) => (
+                      <Icon key={i} name="Star" size={16} className="text-primary fill-primary" />
+                    ))}
+                  </div>
+                </div>
+              </div>
+              <CardDescription className="text-base leading-relaxed">
+                Приводим нашу немецкую овчарку на плановые осмотры уже 2 года. Очень нравится отношение персонала — никакой суеты, всё по времени. Собака не нервничает, а это важно!
+              </CardDescription>
+            </CardHeader>
+          </Card>
+
+          <Card className="animate-fade-in border-2 hover:shadow-lg transition-shadow" style={{ animationDelay: '0.2s' }}>
+            <CardHeader>
+              <div className="flex items-center gap-3 mb-2">
+                <div className="w-12 h-12 rounded-full bg-primary/10 flex items-center justify-center">
+                  <span className="text-xl font-bold text-primary">ЕВ</span>
+                </div>
+                <div>
+                  <CardTitle className="text-lg">Елена Васильева</CardTitle>
+                  <div className="flex gap-1 mt-1">
+                    {[...Array(5)].map((_, i) => (
+                      <Icon key={i} name="Star" size={16} className="text-primary fill-primary" />
+                    ))}
+                  </div>
+                </div>
+              </div>
+              <CardDescription className="text-base leading-relaxed">
+                Экстренно обращались с лабрадором — врачи приняли быстро, провели все необходимые процедуры. Отдельное спасибо за подробные объяснения и рекомендации по уходу. Рекомендую всем!
+              </CardDescription>
+            </CardHeader>
+          </Card>
+        </div>
+      </section>
+
       <footer className="bg-foreground text-white py-12">
         <div className="container mx-auto px-4">
           <div className="grid md:grid-cols-3 gap-8">
