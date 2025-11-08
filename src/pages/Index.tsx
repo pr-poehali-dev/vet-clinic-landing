@@ -193,7 +193,68 @@ const Index = () => {
 
       <section className="bg-white py-16 md:py-24">
         <div className="container mx-auto px-4">
-          <div className="grid md:grid-cols-2 gap-12 items-center max-w-6xl mx-auto">
+          <div className="text-center mb-12 animate-fade-in">
+            <h2 className="text-3xl md:text-4xl font-bold text-foreground mb-4">
+              Наша клиника
+            </h2>
+            <p className="text-lg text-muted-foreground max-w-2xl mx-auto">
+              Современное оборудование и комфортное пространство для вашего питомца
+            </p>
+          </div>
+          <div className="grid md:grid-cols-2 gap-6 max-w-6xl mx-auto">
+            <div className="relative overflow-hidden rounded-2xl animate-scale-in group">
+              <img
+                src="https://cdn.poehali.dev/projects/2c3cb221-793c-408a-94f1-e3303311f575/files/c3490e9c-c4cc-482e-80cf-020aa6c24262.jpg"
+                alt="Приёмная клиники"
+                className="w-full h-[280px] object-cover transition-transform duration-500 group-hover:scale-110"
+              />
+              <div className="absolute bottom-0 left-0 right-0 bg-gradient-to-t from-black/70 to-transparent p-6">
+                <h3 className="text-white font-semibold text-xl">Приёмная</h3>
+                <p className="text-white/90 text-sm">Уютная зона ожидания</p>
+              </div>
+            </div>
+            
+            <div className="relative overflow-hidden rounded-2xl animate-scale-in group" style={{ animationDelay: '0.1s' }}>
+              <img
+                src="https://cdn.poehali.dev/projects/2c3cb221-793c-408a-94f1-e3303311f575/files/d010b9ad-c445-422a-a31d-7a88db662a5d.jpg"
+                alt="Кабинет осмотра"
+                className="w-full h-[280px] object-cover transition-transform duration-500 group-hover:scale-110"
+              />
+              <div className="absolute bottom-0 left-0 right-0 bg-gradient-to-t from-black/70 to-transparent p-6">
+                <h3 className="text-white font-semibold text-xl">Кабинет осмотра</h3>
+                <p className="text-white/90 text-sm">Современное оборудование</p>
+              </div>
+            </div>
+
+            <div className="relative overflow-hidden rounded-2xl animate-scale-in group" style={{ animationDelay: '0.2s' }}>
+              <img
+                src="https://cdn.poehali.dev/projects/2c3cb221-793c-408a-94f1-e3303311f575/files/3d0dae3f-fb6e-41e9-88ff-af5c40df1e6f.jpg"
+                alt="Процедурная"
+                className="w-full h-[280px] object-cover transition-transform duration-500 group-hover:scale-110"
+              />
+              <div className="absolute bottom-0 left-0 right-0 bg-gradient-to-t from-black/70 to-transparent p-6">
+                <h3 className="text-white font-semibold text-xl">Процедурная</h3>
+                <p className="text-white/90 text-sm">Чистота и стерильность</p>
+              </div>
+            </div>
+
+            <div className="relative overflow-hidden rounded-2xl animate-scale-in group" style={{ animationDelay: '0.3s' }}>
+              <img
+                src="https://cdn.poehali.dev/projects/2c3cb221-793c-408a-94f1-e3303311f575/files/3e163dac-99b8-4b15-b994-2f7108c46d7f.jpg"
+                alt="Зона восстановления"
+                className="w-full h-[280px] object-cover transition-transform duration-500 group-hover:scale-110"
+              />
+              <div className="absolute bottom-0 left-0 right-0 bg-gradient-to-t from-black/70 to-transparent p-6">
+                <h3 className="text-white font-semibold text-xl">Зона восстановления</h3>
+                <p className="text-white/90 text-sm">Комфорт после процедур</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section className="container mx-auto px-4 py-16 md:py-24">
+        <div className="grid md:grid-cols-2 gap-12 items-center max-w-6xl mx-auto">
             <div className="animate-fade-in">
               <h2 className="text-3xl md:text-4xl font-bold text-foreground mb-4">
                 Запишитесь на прием
