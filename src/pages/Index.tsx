@@ -253,8 +253,9 @@ const Index = () => {
         </div>
       </section>
 
-      <section className="container mx-auto px-4 py-16 md:py-24">
-        <div className="grid md:grid-cols-2 gap-12 items-center max-w-6xl mx-auto">
+      <section className="bg-accent/30 py-16 md:py-24">
+        <div className="container mx-auto px-4">
+          <div className="grid md:grid-cols-2 gap-12 items-center max-w-6xl mx-auto">
             <div className="animate-fade-in">
               <h2 className="text-3xl md:text-4xl font-bold text-foreground mb-4">
                 Запишитесь на прием
@@ -318,8 +319,9 @@ const Index = () => {
         </div>
       </section>
 
-      <section className="container mx-auto px-4 py-16 md:py-24">
-        <div className="text-center mb-12 animate-fade-in">
+      <section className="bg-white py-16 md:py-24">
+        <div className="container mx-auto px-4">
+          <div className="text-center mb-12 animate-fade-in">
           <h2 className="text-3xl md:text-4xl font-bold text-foreground mb-4">
             Отзывы наших клиентов
           </h2>
@@ -390,6 +392,7 @@ const Index = () => {
               </CardDescription>
             </CardHeader>
           </Card>
+        </div>
         </div>
       </section>
 
